@@ -1,8 +1,8 @@
 {
-        "name": "font-awesome-4",
-        "description": "Font Awesome 4 packaged for Meteor",
-        "homepage": "https://github.com/michaelbishop/meteor-font-awesome-4",
-        "author": "Michael Bishop",
+        "name": "font-awesome-local",
+        "description": "Font Awesome packaged for Meteor",
+        "homepage": "https://github.com/craigmaslowski/meteor-font-awesome-local",
+        "author": "Michael Bishop, Craig Maslowski",
         "version": "4.0.0",
-        "git": "https://github.com/michaelbishop/meteor-font-awesome-4.git"
+        "git": "https://github.com/craigmaslowski/meteor-font-awesome-local.git"
 }

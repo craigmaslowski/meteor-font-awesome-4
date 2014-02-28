@@ -1,25 +1,21 @@
-meteor-font-awesome-4
-=====================
+meteor-font-awesome-local
+=========================
 
-NOTE: this package is [deprecated](https://github.com/michaelbishop/meteor-font-awesome-4/issues/2#issuecomment-34832784) and will be removed from Atmosphere.
+This is a reissue of [Michael Bishop's meteor-font-awesome-4](https://github.com/michaelbishop/meteor-font-awesome-4) package. It will install the Font Awesome files locally as opposed to grabbing them from a CDN like the [meteor-font-awesome](https://github.com/nate-strauser/meteor-font-awesome) package does.
 
-Please use https://github.com/nate-strauser/meteor-font-awesome instead.
-
+It's useful for those who don't want to use a CDN or who want to develop when disconnected from the internet.
 
 ---
 
-Font Awesome 4 has been completely rewritten for speed and is fully compatible with Bootstrap 3.
-
-Meteorite smart package for Font Awesome 4
-[Font-Awesome](http://fortawesome.github.io/Font-Awesome/)
-
 ## How to install
 1. `npm install -g meteorite` (if not already installed)
-2. `mrt add font-awesome-4`
+2. `mrt add font-awesome-local`
 
-## Important Notes
-Must include fa in class to work properly like this:
+## Usage
+One change from Michael Bishop's original Meteor package is the inclusion of a Handlebars helper. To use the helper, pass it the name of the icon you wish to display without the `fa-` designator. For example, to render the `fa-plus` icon, add the following to your template.
 
-    <i class="fa fa-camera-retro"></i> fa-camera-retro
+```
+{{faIcon 'plus'}}
+```
 
-Strongly recommend reading through [examples](http://fortawesome.github.io/Font-Awesome/examples/). There have been lots of good changes.
+For general Font Awesome examples, see the [Font Awesome site](http://fortawesome.github.io/Font-Awesome/examples/).
