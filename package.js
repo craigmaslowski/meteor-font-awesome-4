@@ -3,6 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api){
+	api.use(['handlebars'], 'client');
 	api.add_files('lib/font-awesome-4.0.3/fonts/fontawesome-webfont.eot', 'client');
 	api.add_files('lib/font-awesome-4.0.3/fonts/fontawesome-webfont.svg', 'client');
 	api.add_files('lib/font-awesome-4.0.3/fonts/fontawesome-webfont.ttf', 'client');
